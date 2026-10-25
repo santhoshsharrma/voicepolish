@@ -82,13 +82,13 @@ textarea::placeholder{color:#71717a}
 </style></head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
-<symbol id="mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></symbol>
-<symbol id="stop" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></symbol>
-<symbol id="copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></symbol>
-<symbol id="dl" viewBox="0 0 24 24"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 20h14"/></symbol>
-<symbol id="re" viewBox="0 0 24 24"><path d="M20 11a8 8 0 1 0-2.3 5.7M20 5v6h-6"/></symbol>
-<symbol id="sp" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></symbol>
-<symbol id="ar" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+<symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></symbol>
+<symbol id="i-stop" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/></symbol>
+<symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2"/></symbol>
+<symbol id="i-dl" viewBox="0 0 24 24"><path d="M12 4v11m0 0-4-4m4 4 4-4M5 20h14"/></symbol>
+<symbol id="i-re" viewBox="0 0 24 24"><path d="M20 11a8 8 0 1 0-2.3 5.7M20 5v6h-6"/></symbol>
+<symbol id="i-sp" viewBox="0 0 24 24"><path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/></symbol>
+<symbol id="i-ar" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
 </defs></svg>
 <div class="aurora" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><div class="grain" aria-hidden="true"></div>
 <header><div class="nav"><a class="logo" href="#home">VoicePolish<i></i></a><a class="hide" href="#about">About</a><a class="hide" href="#how">How it works</a><a href="#history">History</a><a class="btn pri" href="#app">Try it free</a></div></header>
@@ -97,7 +97,7 @@ textarea::placeholder{color:#71717a}
 <div data-view="home">
 <div class="hero"><span class="pill">Voice to writing</span><h1>Speak naturally.<br>Get polished writing.</h1>
 <p>VoicePolish turns your spoken thoughts into clean emails, notes and messages, without changing what you meant.</p>
-<a class="btn pri" href="#app"><svg class="ico"><use href="#mic"/></svg>Try VoicePolish<svg class="ico"><use href="#ar"/></svg></a></div>
+<a class="btn pri" href="#app"><svg class="ico"><use href="#i-mic"/></svg>Try VoicePolish<svg class="ico"><use href="#i-ar"/></svg></a></div>
 <div class="wrap">
 <div class="say"><small>You said</small><p class="a">“so um the review is thursday at 3, actually no, friday, and uh we need the copy before then”</p><div class="ar"></div><small>VoicePolish wrote</small><p class="b">The review is on Friday at 3. We need the copy before then.</p></div>
 <section class="s" id="about"><h2>Talking is faster than typing.</h2><p class="lead">VoicePolish removes false starts, filler and self-corrections, and keeps your facts exactly as you said them.</p>
@@ -117,13 +117,13 @@ textarea::placeholder{color:#71717a}
 <details><summary>Does polishing change my meaning?</summary><p>It’s instructed not to add facts or change intent. Always review the result; you can edit it or compare with the original.</p></details>
 <details><summary>Why is the mic blocked?</summary><p>Allow microphone access in your browser’s site settings. If the page is embedded, open it in its own tab.</p></details>
 </div></section>
-<div class="cta"><h2>Say it once.<br>Send it polished.</h2><a class="btn pri" href="#app">Try it free<svg class="ico"><use href="#ar"/></svg></a></div>
+<div class="cta"><h2>Say it once.<br>Send it polished.</h2><a class="btn pri" href="#app">Try it free<svg class="ico"><use href="#i-ar"/></svg></a></div>
 </div></div>
 
 <div data-view="app" hidden><div class="wrap app">
 <h2>Speak naturally.</h2><p class="sub">Press the mic, say what you mean, and get clean writing back.</p>
 <div class="rec" id="rec">
-<button class="mic" id="mic" aria-label="Start recording"><svg class="ico"><use href="#mic"/></svg></button>
+<button class="mic" id="mic" aria-label="Start recording"><svg class="ico"><use href="#i-mic"/></svg></button>
 <canvas id="viz" width="680" height="88" aria-hidden="true"></canvas>
 <div class="status" role="status" aria-live="polite"><span class="dot"></span><span id="st">Press the mic or Space to record</span></div>
 <p class="links">No microphone? <button id="sample">Load a sample transcript</button> or type below.</p>
@@ -143,13 +143,13 @@ textarea::placeholder{color:#71717a}
 <button role="radio" aria-checked="false" data-s="concise">Concise</button>
 <button role="radio" aria-checked="false" data-s="email">Email</button>
 </div>
-<button class="btn pri" id="go"><svg class="ico"><use href="#sp"/></svg>Polish</button>
+<button class="btn pri" id="go"><svg class="ico"><use href="#i-sp"/></svg>Polish</button>
 <label class="l" for="out" style="margin-top:26px"><span id="ol">Polished</span><span id="owc"></span></label>
 <textarea id="out" placeholder="Polished text appears here. Editable."></textarea>
 <div class="rw">
-<button class="btn sm" id="cp"><svg class="ico"><use href="#copy"/></svg><span>Copy</span></button>
-<button class="btn sm" id="dl"><svg class="ico"><use href="#dl"/></svg>Download</button>
-<button class="btn sm" id="rg"><svg class="ico"><use href="#re"/></svg>Regenerate</button>
+<button class="btn sm" id="cp"><svg class="ico"><use href="#i-copy"/></svg><span>Copy</span></button>
+<button class="btn sm" id="dl"><svg class="ico"><use href="#i-dl"/></svg>Download</button>
+<button class="btn sm" id="rg"><svg class="ico"><use href="#i-re"/></svg>Regenerate</button>
 <button class="btn sm" id="cm">Compare</button>
 </div>
 <div id="cmp"></div>
@@ -186,7 +186,7 @@ async function start(){
  catch(e){show('#err',e.name==='NotAllowedError'?'Microphone access was blocked. Click the lock icon in the address bar, allow Microphone, then reload.':'No usable microphone found. Connect one, or type / load a sample.');return}
  try{mr=new MediaRecorder(stream,mime()?{mimeType:mime()}:undefined)}catch(e){stream.getTracks().forEach(t=>t.stop());show('#err','Recording isn’t supported in this browser. Type instead.');return}
  on=true;base=$('#tr').value.trim();usedSample=false;chunks=[];lastBlob=null;$('#rt').hidden=true;
- const b=$('#mic');b.classList.add('on');b.setAttribute('aria-label','Stop recording');b.innerHTML='<svg class="ico"><use href="#stop"/></svg>';$('#rec').classList.add('live');
+ const b=$('#mic');b.classList.add('on');b.setAttribute('aria-label','Stop recording');b.innerHTML='<svg class="ico"><use href="#i-stop"/></svg>';$('#rec').classList.add('live');
  ctx=new (window.AudioContext||window.webkitAudioContext)();an=ctx.createAnalyser();an.fftSize=128;ctx.createMediaStreamSource(stream).connect(an);draw();
  mr.ondataavailable=e=>{if(e.data&&e.data.size)chunks.push(e.data)};
  mr.onstop=()=>{lastBlob=new Blob(chunks,{type:(mr.mimeType||'audio/webm').split(';')[0]});transcribe()};
@@ -198,7 +198,7 @@ function stop(){
  on=false;clearInterval(tick);clearTimeout(tmo);cancelAnimationFrame(raf);
  try{mr&&mr.state!=='inactive'&&mr.stop()}catch(_){}
  stream&&stream.getTracks().forEach(t=>t.stop());ctx&&ctx.close().catch(()=>{});stream=ctx=null;
- const b=$('#mic');b.classList.remove('on');b.setAttribute('aria-label','Start recording');b.innerHTML='<svg class="ico"><use href="#mic"/></svg>';$('#rec').classList.remove('live');
+ const b=$('#mic');b.classList.remove('on');b.setAttribute('aria-label','Start recording');b.innerHTML='<svg class="ico"><use href="#i-mic"/></svg>';$('#rec').classList.remove('live');
  vclear();
 }
 async function transcribe(){
